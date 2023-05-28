@@ -42,7 +42,7 @@ const Left = styled.div`
   gap: 1rem;
 
   @media only screen and (max-width: 768px) {
-    flex: 1;
+    height: 100%;
     align-items: center; 
   }
 `
@@ -115,7 +115,7 @@ const Img = styled.img`
   }
   @media only screen and (max-width: 768px) {
     width: 300px;
-    
+
   }
 
 `
