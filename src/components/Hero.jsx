@@ -42,7 +42,7 @@ const Left = styled.div`
   gap: 1rem;
 
   @media only screen and (max-width: 768px) {
-    height: 100%;
+    height: min-content;
     align-items: center; 
   }
 `
