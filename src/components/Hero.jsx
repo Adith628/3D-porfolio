@@ -42,7 +42,7 @@ const Left = styled.div`
   gap: 1rem;
 
   @media only screen and (max-width: 768px) {
-    height: min-content;
+    height: 100%;
     align-items: center; 
   }
 `
@@ -93,6 +93,7 @@ const Right = styled.div`
 
   @media only screen and (max-width: 768px) {
     max-height: 65vh;
+    wdith:100%;
   }
 
 `
