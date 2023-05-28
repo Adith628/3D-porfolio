@@ -18,12 +18,18 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+}
 
 `
 const Container = styled.div`
   width: 80vw;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+  height:100%;
+  flex-direction:column-reverse;
+}
 `
 const Left = styled.div`
   flex : 1;
@@ -31,6 +37,11 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;  
+
+  @media only screen and (max-width: 768px) {
+  padding:20px;
+  height:100%;
+}
 `
 const List = styled.ul`
   list-style: none;
@@ -65,15 +76,24 @@ const ListItem = styled.li`
       @keyframes moveText{
         to{
           width: 100%;
+
         }
       }
     }
   }
+  
+  @media only screen and (max-width: 768px) {
+  color:white;
+  font-size:2rem;
+}
 
 `
 
 const Right = styled.div`
   flex : 1;
+  @media only screen and (max-width: 768px) {
+    max-height:30vh;
+}
 `
 
 const Works = () => {

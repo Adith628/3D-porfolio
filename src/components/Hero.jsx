@@ -11,16 +11,28 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    height:200vh;
+  }
+
  
 `
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
   width: 80vw;
   display: flex;
   justify-content: space-between;
   overflow: visible;
   flex-wrap: reverse-wrap;
+
+  @media only screen and (max-width: 768px) {
+    wdith:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `
 const Left = styled.div`
   flex : 2;
@@ -28,9 +40,19 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    align-items: center; 
+  }
 `
 const Title = styled.h1`
   font-size: 3.5rem;
+
+@media only screen and (max-width: 768px) {
+  text-align:center;
+}
+
 `
 const WhatWeDo = styled.div`
   display: flex;
@@ -48,6 +70,11 @@ const Desc = styled.p`
   font-size: 1rem;
   color: lightgray;
 
+  @media only screen and (max-width: 768px) {
+  text-align:center;
+  padding :20px;
+}
+
 `
 const Button = styled.button`
   background-color: #da4ea2;
@@ -63,6 +90,11 @@ const Right = styled.div`
   flex : 3;
   position: relative;
   overflow:visible;
+
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+  }
+
 `
 const Img = styled.img`
   width: min(90vh,45vw);
@@ -106,12 +138,11 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3d Model */}
-          <Canvas camera={{fov:25, position:[5,5,5]
-          }}>
+          <Canvas>
             <OrbitControls enableZoom={false}  />
             <ambientLight intensity={1}/>
-            <directionalLight position={[1,2,3]}/>
-            <Sphere args={[1,100,200]} scale={1.75} >
+            <directionalLight position={[3,2,1]}/>
+            <Sphere args={[1,100,200]} scale={1.7} >
             <MeshDistortMaterial color='#220736' attach="material" distort={0.5} speed={2} />
             </Sphere>
         </Canvas>

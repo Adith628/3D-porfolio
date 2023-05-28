@@ -30,6 +30,10 @@ const List = styled.ul`
 `
 const ListItem = styled.li`
   cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 const Icon = styled.img`
   height: 1.5rem;

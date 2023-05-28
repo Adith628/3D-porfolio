@@ -25,11 +25,19 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+  text-align:center;
+  align-items:center;
+}
 `
 
 const Title = styled.h1`
   font-size: 3.5rem;
   line-height: 1.2;
+  @media only screen and (max-width: 768px) {
+  font-size:3rem;
+}
 `
 const WhatWeDo = styled.div`
   display: flex;
@@ -60,6 +68,10 @@ const Button = styled.button`
 
 const Left = styled.div`
   flex : 1;
+
+  @media only screen and (max-width: 768px) {
+  display:none;
+}
 
 `
 

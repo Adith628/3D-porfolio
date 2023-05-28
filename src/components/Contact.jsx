@@ -24,6 +24,10 @@ const Left = styled.div`
   align-items: center;
   justify-content: flex-end;
 
+  @media only screen and (max-width: 768px) {
+  padding:10px;
+}
+
 `;
 
 const Title = styled.h1`
