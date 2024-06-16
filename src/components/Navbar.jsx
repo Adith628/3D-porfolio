@@ -18,8 +18,11 @@ const Links = styled.div`
   gap : 2rem;
 
 `
-const Logo = styled.img`
+const Brand = styled.div`
 height: 3rem;
+display:flex;
+padding:1rem 2rem;
+align-items : center;
 
 `
 const List = styled.ul`
@@ -60,7 +63,7 @@ const Navbar = () => {
     <Section>
         <Container>
             <Links>
-              <Logo src='./img/logo.png' />
+              <Brand > 3DPortFolio</Brand >
               <List>
                 <ListItem>Home</ListItem>
                 <ListItem>Studio</ListItem>
