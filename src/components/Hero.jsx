@@ -92,7 +92,7 @@ const Right = styled.div`
   }
 `;
 const Img = styled.img`
-  width: min(90vh, 45vw);
+  width: min(80vh, 40vw);
   aspect-ratio: 1/1;
   object-fit: contain;
   position: absolute;
